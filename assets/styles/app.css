@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&display=swap');
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Cormorant SC', serif;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,20,46,1) 33%, rgba(0,212,255,1) 100%);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+progress {
+  width: 80%;
+  height: 2rem;
+  border: 1px solid #a927f5;
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color:green;
+  transition: all 0.5s ease-out;
+}
+
+button {
+  font: inherit;
+  background: #ff0062;
+  border: 2px solid #42061d;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #a927f5;
+  border-color: #a927f5;
+}
+
+#health-levels,
+#controls {
+  margin: 2rem auto;
+  width: 30rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+  border: black 1rem solid;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter {
+  color: blue;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 6px;
+}
